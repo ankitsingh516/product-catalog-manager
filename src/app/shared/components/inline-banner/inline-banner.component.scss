@@ -1,0 +1,26 @@
+.banner {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .success {
+    background-color: #4caf50; /* Green */
+    color: white;
+    justify-content: center !important;
+  }
+  
+  .error {
+    background-color: #f44336; /* Red */
+    color: white;
+    justify-content: center !important;
+  }
+  
+  span {
+    margin-right: 10px;
+  }

@@ -1,0 +1,89 @@
+h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+/* Main container styling */
+.main {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the heading */
+.animated-heading {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.5s ease-out, slideInLeft 1s ease-out;
+  background-image: linear-gradient(to right, #ff6a00, #ee0979);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Fade-in and Slide-up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsiveness: Ensure it's adaptive on smaller screens */
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}

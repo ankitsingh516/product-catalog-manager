@@ -1,0 +1,142 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 1000,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 700,
+      "rating": 4.7
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "category": "Clothing",
+      "price": 20,
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "name": "Jeans",
+      "category": "Clothing",
+      "price": 50,
+      "rating": 4.8
+    },
+    {
+      "id": 5,
+      "name": "Shoes",
+      "category": "Footwear",
+      "price": 80,
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "name": "Sandals",
+      "category": "Footwear",
+      "price": 30,
+      "rating": 4.3
+    },
+    {
+      "id": 7,
+      "name": "Headphones",
+      "category": "Electronics",
+      "price": 150,
+      "rating": 4.9
+    },
+    {
+      "id": 8,
+      "name": "Jacket",
+      "category": "Clothing",
+      "price": 70,
+      "rating": 4.4
+    },
+    {
+      "id": 9,
+      "name": "Sweater",
+      "category": "Clothing",
+      "price": 60,
+      "rating": 4.1
+    },
+    {
+      "id": 10,
+      "name": "Boots",
+      "category": "Footwear",
+      "price": 100,
+      "rating": 4.0
+    },
+    {
+      "id": 11,
+      "name": "Tablet",
+      "category": "Electronics",
+      "price": 500,
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "name": "Dress",
+      "category": "Clothing",
+      "price": 40,
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "name": "Sneakers",
+      "category": "Footwear",
+      "price": 90,
+      "rating": 4.6
+    },
+    {
+      "id": 14,
+      "name": "Earphones",
+      "category": "Electronics",
+      "price": 50,
+      "rating": 4.8
+    },
+    {
+      "id": 15,
+      "name": "Socks",
+      "category": "Clothing",
+      "price": 10,
+      "rating": 4.3
+    },
+    {
+      "id": 16,
+      "name": "Slippers",
+      "category": "Footwear",
+      "price": 20,
+      "rating": 4.9
+    },
+    {
+      "id": 17,
+      "name": "Smartwatch",
+      "category": "Electronics",
+      "price": 200,
+      "rating": 4.4
+    },
+    {
+      "id": 18,
+      "name": "Skirt",
+      "category": "Clothing",
+      "price": 30,
+      "rating": 4.1
+    },
+    {
+      "id": 19,
+      "name": "Hat",
+      "category": "Clothing",
+      "price": 15,
+      "rating": 4.0
+    },
+    {
+      "id": 20,
+      "name": "Heels",
+      "category": "Footwear",
+      "price": 120,
+      "rating": 4.5
+    }
+  ]
