@@ -1,0 +1,219 @@
+// Responsive table on small screens
+@media (max-width: 768px) {
+  .custom-table {
+    font-size: 14px;
+  }
+
+  .banner {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
+.product-table-container {
+  max-width: 90%;
+  min-height: 100%;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+// Filter Dropdown Styling
+.filter-container {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+mat-form-field {
+  width: 250px;
+}
+
+// Styling for Material Table
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+
+  th {
+    background-color: #1976d2; // Material Blue
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+  }
+
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  // Alternate row color with better contrast
+  tr:nth-child(even) {
+    background-color: #f0f7ff; // Very Light Blue
+    color: #333333; // Dark Gray Text
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+    color: #333333; // Dark Gray Text
+  }
+
+  tr:hover {
+    background-color: #bbdefb; // Light Blue Hover Effect
+    cursor: pointer;
+  }
+}
+
+// Styling for Action Buttons (Updated Icon Colors)
+.mat-icon-button {
+  margin-right: 5px;
+}
+
+// Edit Icon - Green Color
+.mat-icon.edit-icon {
+  color: #388e3c; // Material Green
+}
+
+// Delete Icon - Red Color
+.mat-icon.delete-icon {
+  color: #d32f2f; // Material Red
+}
+
+// Edit and delete buttons on hover
+.mat-mdc-icon-button {
+  margin-right: 5px;
+  color: #1565c0; // Dark Blue for icons
+}
+
+/* Improve text visibility inside mat-select */
+.mat-select-value {
+  color: black !important;
+  font-weight: 500;
+}
+
+mat-select {
+  color: black !important;
+  font-weight: 500;
+}
+
+mat-label {
+  color: #666 !important;
+  font-weight: 500;
+}
+
+/* Improve mat-form-field label visibility */
+.mat-form-field-label {
+  color: #666 !important;
+  font-weight: 500;
+}
+
+.mat-mdc-select-value {
+  color: black !important;
+  font-weight: 500;
+}
+
+// Styling for the sort-options container
+.sort-options {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+// Styling for individual sorting buttons
+.sort-options button {
+  font-size: 14px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Hover effect on buttons
+.sort-options button:hover {
+  background-color: #1976d2;
+  /* Blue color on hover */
+  color: white;
+  /* White text on hover */
+}
+
+// Focus effect on buttons
+.sort-options button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(25, 118, 210, 0.5);
+  /* Blue shadow on focus */
+}
+
+// Disabled state styling for the buttons (optional)
+.sort-options button:disabled {
+  background-color: #e0e0e0;
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.add-product {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-product button {
+  font-size: 14px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Hover effect on buttons
+.add-product button:hover {
+  background-color: rgb(233, 154, 7);
+  /* Blue color on hover */
+  color: white;
+  /* White text on hover */
+}
+
+// Focus effect on buttons
+.add-product button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(25, 118, 210, 0.5);
+  /* Blue shadow on focus */
+}
+
+.banner {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Centering the loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
