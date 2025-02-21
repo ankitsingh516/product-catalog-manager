@@ -27,11 +27,12 @@ Develop a single-page application that allows users to browse and manage a catal
 
 ### SUBMISSION
 ## Key Architectural Decisions
-1. State Management: Using Angular services for state management to handle complex state interactions and ensure a unidirectional data flow.
+1. State Management: Using Angular services for state management to handle complex state interactions and ensure data flow.
 2. Component Architecture: Breaking down the application into reusable components to promote modularity and maintainability.
 3. Responsive Design: Ensuring the application is mobile-responsive with appropriate breakpoints for different screen sizes.
 4. Error Handling: Implementing loading and error states for API interactions to enhance user experience.
 5. Animations: Added animations for application title, buttons, dropdowns
+6. Added setTimeout for 3 seconds to show loader in product-list page
 
 ## Additional Information
 1. API Mocking: For the purpose of this assignment, product data is fetched from a mock API located in the assets/products.json file. This can be replaced with a real API endpoint as needed.

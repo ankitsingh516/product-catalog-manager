@@ -50,6 +50,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   // Fetch products from service
   loadProducts() {
     this.loading = true;
+     // Added timeout to simulate API call and show loader
     setTimeout(() => {
       this.productService.getProducts().subscribe({
         next: (data) => {
@@ -63,7 +64,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
           this.loading = false;
         }
       });
-    }, 3000);
+    }, 3000); // for 3 seconds
 
   }
 
