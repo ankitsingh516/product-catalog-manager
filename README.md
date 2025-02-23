@@ -48,7 +48,7 @@ For any questions or issues, please contact [ankitsingh516@gmail.com].
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/theandrewlane/product-catalog-manager.git
+    git clone https://github.com/ankitsingh516/product-catalog-manager.git
     ```
 
 2. **Install Dependencies:**
