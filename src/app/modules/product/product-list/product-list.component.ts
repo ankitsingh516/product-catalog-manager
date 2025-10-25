@@ -30,6 +30,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   sortBy: string = 'price'; // Default sorting by price
   sortDirection: 'asc' | 'desc' = 'asc'; // Default sort direction
   loading: boolean = false;
+  searchText: string = ''; // Added to track search text
 
   @ViewChild(MatSort) sort!: MatSort;
 
@@ -50,7 +51,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   // Fetch products from service
   loadProducts() {
     this.loading = true;
-    setTimeout(() => {
+    setTimeout(() => { // Added timeout to simulate API call and show loader
       this.productService.getProducts().subscribe({
         next: (data) => {
           this.dataSource.data = data;
@@ -63,20 +64,52 @@ export class ProductListComponent implements OnInit, AfterViewInit {
           this.loading = false;
         }
       });
-    }, 3000);
+    }, 3000); // for 3 seconds
 
+  }
+
+  // Apply global filter across all columns
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.searchText = filterValue;
+    this.updateFilter();
   }
 
   // Filter products by category
   applyCategoryFilter() {
-    this.dataSource.filter = this.selectedCategory.trim().toLowerCase();
+    this.updateFilter();
   }
 
-  // Custom filter predicate to filter by category
+  // Update filter based on both search text and category
+  private updateFilter() {
+    this.dataSource.filterPredicate = (data: Product, filter: string) => {
+      // If we have both search text and category, both conditions must be met
+      const searchMatch = !this.searchText ? true : 
+        JSON.stringify([
+          data.name,
+          data.category,
+          data.price.toString(),
+          data.rating.toString()
+        ]).toLowerCase().includes(this.searchText.toLowerCase());
+      
+      const categoryMatch = !this.selectedCategory ? true :
+        data.category.toLowerCase() === this.selectedCategory.toLowerCase();
+
+      return searchMatch && categoryMatch;
+    };
+
+    // Trigger the filter
+    this.dataSource.filter = this.searchText || this.selectedCategory || '';
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+  // Initialize sorting and filtering
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
-    this.dataSource.filterPredicate = (data: Product, filter: string) =>
-      data.category.toLowerCase().includes(filter);
+    this.updateFilter();
   }
 
   // Toggle sorting direction and update data source

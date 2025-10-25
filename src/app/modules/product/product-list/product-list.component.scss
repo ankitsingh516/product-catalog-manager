@@ -33,10 +33,25 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
+  gap: 15px;
 
-mat-form-field {
-  width: 250px;
+  .search-field {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 15px;
+
+    .mat-icon {
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    input {
+      padding-right: 40px;
+    }
+  }
+
+  mat-form-field {
+    width: 250px;
+  }
 }
 
 // Styling for Material Table
@@ -167,6 +182,7 @@ mat-label {
 .add-product {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 10px;
 }
 
 .add-product button {

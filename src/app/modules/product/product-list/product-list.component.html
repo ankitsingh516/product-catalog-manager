@@ -9,6 +9,13 @@
 
     <!-- Filter Section -->
     <div class="filter-container">
+        <!-- Search Box -->
+        <mat-form-field appearance="outline" class="search-field">
+            <mat-label>Search Products</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Search any field..." #input>
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
         <mat-form-field appearance="outline" class="full-width">
             <mat-label>Filter by Category</mat-label>
             <mat-select [(ngModel)]="selectedCategory" (selectionChange)="applyCategoryFilter()">
