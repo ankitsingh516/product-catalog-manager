@@ -1,4 +1,4 @@
-# Frontend Take-Home Assignment: Product Catalog Manager
+# Product Catalog Manager
 
 ## Key Requirements
 
@@ -103,3 +103,5 @@ src/
 ├── index.html
 ├── main.ts
 
+=======
+# product-catalog-manager
